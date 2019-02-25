@@ -1,45 +1,50 @@
 import React from 'react'
 
-
 class Carousel extends React.Component {
-
-    constructor (props) {
-        super(props);
+    constructor(props) {
+        super(props)
 
         this.state = {
             photos: [],
-            active: 0
+            active: 0,
         }
     }
 
     static getDerivedStateFromProps({ media }) {
-        let photos = [];
+        let photos = []
 
         if (media && media.photos && media.photos.photo) {
-            photos = media.photos.photo.filter(photo => photo["@size"] === "pn");
+            photos = media.photos.photo.filter(photo => photo['@size'] === 'pn')
         }
 
-        return { photos };
+        return { photos }
     }
 
-    render () {
+    handleIndexClick(event) {
+        this.setState({
+            active: event.target.dataset.index,
+        })
+    }
 
-        const { photos, active } = this.state;
+    render() {
+        const { photos, active } = this.state
 
         return (
             <div className="carousel">
-                <img src={photos[active].value} alt="primary animal"/>
+                <img src={photos[active].value} alt="primary animal" />
                 <div className="carousel-smaller">
                     {photos.map((photo, index) => (
-                        <img src={photo.value} src={photo.value} 
-                        className={index === active ? 'active' : ''} 
-                        alt="animal thumbnail"/>    
+                        <img
+                            src={photo.value}
+                            src={photo.value}
+                            className={index === active ? 'active' : ''}
+                            alt="animal thumbnail"
+                        />
                     ))}
                 </div>
             </div>
         )
     }
-    
 }
 
-export default Carousel;
+export default Carousel
