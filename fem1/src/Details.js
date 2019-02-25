@@ -9,12 +9,17 @@ const petfinder = pf({
 
 class Details extends React.Component {
 
-    constructor (props) {
-        super(props);
+    // constructor (props) {
+    //     super(props);
 
-        this.state = {
-            loading: true
-        }
+    //     this.state = {
+    //         loading: true
+    //     }
+    // }
+    //  we can do that because of our babelrc configuration
+    
+    state = {
+        loading: true
     }
 
     componentDidMount () {

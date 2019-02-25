@@ -6,5 +6,13 @@ npm install -D prettier
 
 #   configuring ESLint with React
 npm install -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+
+# to remove class constructor with babel
+npm install -D babel-eslint babel-core babel-preset-env babel-plugin-transform-class-properties 
+#   babel-eslint                                -> allow eslint to use babel to transform your code so it can read it
+#   babel-core                                  -> perform transformations
+#   babel-preset-env                            -> get future JavaScript and transpiles it to current JavaScript
+#   babel-plugin-transform-class-properties     -> allows you to do top level properties on classes
+#   babel-preset-react                          -> allows babel to understand JSX
   
   
