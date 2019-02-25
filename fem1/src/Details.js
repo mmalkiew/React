@@ -1,6 +1,7 @@
 import React from 'react'
 import pf from 'petfinder-client'
 import { navigate } from '@reach/router';
+import Carousel from './Carousel'
 
 const petfinder = pf({
     key: process.env.API_KEY,
@@ -9,18 +10,18 @@ const petfinder = pf({
 
 class Details extends React.Component {
 
-    // constructor (props) {
-    //     super(props);
+    constructor (props) {
+        super(props);
 
-    //     this.state = {
-    //         loading: true
-    //     }
-    // }
-    //  we can do that because of our babelrc configuration
-    
-    state = {
-        loading: true
+        this.state = {
+            loading: true
+        }
     }
+     
+
+    // state = {
+    //     loading: true
+    // }
 
     componentDidMount () {
         petfinder.pet.get({
@@ -53,10 +54,11 @@ class Details extends React.Component {
             return <h1>loading ...</h1>
         }
 
-        const {name, animal, breed, location, description } = this.state;
+        const {name, animal, breed, location, description, media } = this.state;
 
         return (
             <div className="details">
+                <Carousel media={media} />
                 <div>
                     <h1>{name}</h1>
                     <h2>

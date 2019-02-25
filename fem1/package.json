@@ -12,12 +12,24 @@
     },
     "author": "",
     "license": "ISC",
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    },
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ],
     "devDependencies": {
-        "babel-core": "^6.26.3",
+        "@babel/core": "^7.3.3",
+        "@babel/preset-react": "^7.0.0",
         "babel-eslint": "^10.0.1",
         "babel-plugin-transform-class-properties": "^6.24.1",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
+        "babel/core": "^7.3.3",
+        "babel/preset-react": "^7.0.0",
         "eslint": "^5.9.0",
         "eslint-config-prettier": "^3.3.0",
         "eslint-plugin-import": "^2.16.0",
