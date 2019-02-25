@@ -12,15 +12,6 @@
   },
   "author": "",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
-  "plugins": [
-    "@babel/plugin-proposal-class-properties"
-  ],
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-react": "^7.0.0",

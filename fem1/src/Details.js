@@ -43,7 +43,7 @@ class Details extends React.Component {
                     media: pet.media,
                     breed,
                     loading: false,
-                }).catch(() => {
+                }).catch((err) => {
                     navigate('/')
                 })
             })
