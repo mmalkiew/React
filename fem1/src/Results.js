@@ -57,6 +57,7 @@ class Results extends React.Component {
                             location={`${pet.contact.city}, ${
                                 pet.contact.state
                             }`}
+                            id={pet.id}
                         />
                     )
                 })}
