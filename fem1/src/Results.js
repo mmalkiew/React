@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import Pet from './Pet'
 import pf from 'petfinder-client'
+import SearchBox from './SearchBox'
 
 const petfinder = pf({
     key: process.env.API_KEY,
@@ -39,6 +40,7 @@ class Results extends React.Component {
     render() {
         return (
             <div className="search">
+                <SearchBox />
                 {this.state.pets.map(pet => {
                     let breed
                     if (Array.isArray(pet.breeds.breed)) {
@@ -56,7 +58,7 @@ class Results extends React.Component {
                             media={pet.media}
                             location={`${pet.contact.city}, ${
                                 pet.contact.state
-                            }`}
+                                }`}
                             id={pet.id}
                         />
                     )
