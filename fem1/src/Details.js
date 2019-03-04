@@ -61,11 +61,13 @@ class Details extends React.Component {
 
         const { name, animal, breed, location, description, media, showModal } = this.state
 
+        console.log(this.reactRefExample)
+
         return (
             <div className="details">
                 <Carousel media={media} />
                 <div>
-                    <h1>{name}</h1>
+                    <h1 ref={(el) => this.reactRefExample = el}>{name}</h1>
                     <h2>
                         {animal} - {breed} - {location}
                     </h2>
