@@ -9,6 +9,8 @@
         "lint": "eslint \"src/**/*.{js,jsx} \"",
         "test": "jest --silent",
         "test:update": "jest --silent -u",
+        "test:watch": "jest --silent --watch",
+        "test:coverage": "jest --silent --coverage",
         "dev": "parcel src/index.html"
     },
     "author": "",
