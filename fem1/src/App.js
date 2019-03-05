@@ -5,6 +5,7 @@ import { Router, Link } from '@reach/router'
 import Details from './Details'
 import SearchParam from './SearchParam';
 import { Provider } from "./SearchContext"
+import NavBar from './NavBar';
 import pf from 'petfinder-client'
 
 const petfinder = pf({
@@ -82,10 +83,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <header>
-                    <Link to="/">Adopt me!</Link>
-                    <Link to="/search-params"></Link>
-                </header>
+                <NavBar />
                 <Provider value={this.state}>
                     <Router>
                         <Results path="/" />

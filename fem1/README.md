@@ -18,3 +18,11 @@ npm install -D babel-eslint babel-core babel-preset-env babel-plugin-transform-c
 # Topics to learn
 -   event bubbling
 -   event delegation
+
+
+#   testing
+npm install -D jest react-test-renderer
+
+#   CSS is JS with Emotion
+npm install emotion react-emotion
+
