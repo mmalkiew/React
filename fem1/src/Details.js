@@ -21,7 +21,7 @@ class Details extends React.Component {
 
     state = {
         loading: true,
-        showModal: true
+        showModal: false
     }
 
     toggleModal = () => this.setState({ showModal: !this.state.showModal })
@@ -47,8 +47,7 @@ class Details extends React.Component {
                     description: pet.description,
                     media: pet.media,
                     breed,
-                    loading: false,
-                    showModal: true
+                    loading: false
                 }).catch(() => {
                     navigate('/')
                 })
