@@ -24,5 +24,9 @@ npm install -D babel-eslint babel-core babel-preset-env babel-plugin-transform-c
 npm install -D jest react-test-renderer
 
 #   CSS is JS with Emotion
-npm install emotion react-emotion
+npm install -D emotion react-emotion
+
+#   Code splitting 
+npm install react-loadable
+  
 
