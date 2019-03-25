@@ -28,5 +28,8 @@ npm install -D emotion react-emotion
 
 #   Code splitting 
 npm install react-loadable
+
+# install redux
+npm install redux redux-thunk react-redux
   
 
