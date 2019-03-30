@@ -5,7 +5,7 @@ import reducer from './reducers';
 const store = createStore(reducer, compose(
     applyMiddleware(thunk),
     typeof window === "object" &&
-        typeof window.devToolsExtension === "undefined"
+        typeof window.devToolsExtension !== "undefined"
         ? window.devToolsExtension()
         : f => f
 ));
