@@ -1,4 +1,4 @@
-export default function loactionReducer(state = "", action) {
+export default function loactionReducer(state = "Seatlle, WA", action) {
     // const newState = Object.assign({}, state, { location: action.paylod });
     // return newState;
 
