@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
 
-  <Link to="/about">Learn about me!</Link>
+  <Layout />
 )
 
 export default IndexPage
