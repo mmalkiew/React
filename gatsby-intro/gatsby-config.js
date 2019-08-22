@@ -16,6 +16,14 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
