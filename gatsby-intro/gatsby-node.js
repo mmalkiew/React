@@ -30,7 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             path: post.frontmatter.slug,
             component: require.resolve('./src/templates/post.js'),
             context: {
-                slug: `/${post.frontmatter.slug}/`
+                slug: post.frontmatter.slug
             }
         })
     });
