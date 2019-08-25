@@ -1,13 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react";
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import React from "react"
+import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 
 const NavLink = styled(Link)`
   color: #222;
   font-size: 1rem;
-  font-weight: ${props => props.fontWeight || 'normal'};
+  font-weight: ${props => props.fontWeight || "normal"};
   line-height: 1;
   margin: 0 0.5rem 0 0;
   padding: 0.25rem;
@@ -20,7 +20,7 @@ const NavLink = styled(Link)`
   &:last-of-type {
     margin-right: 0;
   }
-`;
+`
 
 const Header = ({ siteTitle }) => (
   <header
@@ -32,14 +32,20 @@ const Header = ({ siteTitle }) => (
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
     `}
   >
-    <NavLink to="/" fontWeight="bold">FEM Workshop</NavLink>
+    <NavLink to="/" fontWeight="bold">
+      FEM Workshop
+    </NavLink>
     <nav
       css={css`
-      margin-top: 0;
+        margin-top: 0;
       `}
     >
-      <NavLink to="/" activeClassName="current-page">Home</NavLink>
-      <NavLink to="/about" activeClassName="current-page">About</NavLink>
+      <NavLink to="/" activeClassName="current-page">
+        Home
+      </NavLink>
+      <NavLink to="/about" activeClassName="current-page">
+        About
+      </NavLink>
     </nav>
   </header>
 )

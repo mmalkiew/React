@@ -7,17 +7,16 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Global, css } from '@emotion/core';
+import { Global, css } from "@emotion/core"
 import { useStaticQuery, graphql } from "gatsby"
-import Helmet from 'react-helmet'
+import Helmet from "react-helmet"
 import Header from "./header"
 import "./layout.css"
 
-import useSiteMetadata from '../hooks/use-sitematadata';
+import useSiteMetadata from "../hooks/use-sitematadata"
 
 const Layout = ({ children }) => {
-
-  const { title, description } = useSiteMetadata();
+  const { title, description } = useSiteMetadata()
 
   return (
     <>
