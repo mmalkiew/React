@@ -98,4 +98,18 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## install emotion
 npm i @emotion/core @emotion/styled gatsby-plugin-emotion
+
+
+npm i gatsby-transformer-sharp gatsby-plugin-sharp gatsby-background-image
+
+npm i gatsby-remark-images
+
+
+
+https://www.gatsbyjs.org/packages/gatsby-transformer-sqip/
+
+##  instagram plugin
+npm i gatsby-source-instagram
+  
+  
   

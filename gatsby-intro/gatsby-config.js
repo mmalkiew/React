@@ -56,6 +56,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: 'gatsbyjs'
+      }
+    }
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
